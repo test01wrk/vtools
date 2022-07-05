@@ -60,7 +60,7 @@ func run() error {
 }
 
 func decryptThermal(filePath, fileName string) {
-	os.MkdirAll(output, 0644)
+	os.MkdirAll(output, 0755)
 
 	bytes, fileErr := ioutil.ReadFile(filePath)
 	if fileErr != nil {
@@ -77,7 +77,7 @@ func decryptThermal(filePath, fileName string) {
 }
 
 func encryptThermal(filePath, fileName string) {
-	os.MkdirAll(output, 0644)
+	os.MkdirAll(output, 0755)
 
 	bytes, fileErr := ioutil.ReadFile(filePath)
 	if fileErr != nil {
